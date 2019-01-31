@@ -1,0 +1,359 @@
+﻿body {
+    background-color:black;
+}
+
+.container-fluid > .backgroundMaps {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 75px;
+}
+
+.container > .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+nav {
+    box-shadow: 5px 4px 5px #000;
+    z-index:11;
+}
+
+.navbar-inverse {
+    background-image: -webkit-linear-gradient(top,#5b5a5a 0,#000 100%);
+    background-image: linear-gradient(to bottom,#5b5a5a 0,#000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5b5a5a', endColorstr='#ff000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.navbar {
+    border-radius: 0;
+    box-shadow: 5px 4px 5px #000;
+    border-bottom-left-radius: 7px;
+    min-height: 55px;
+    margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 17px;
+}
+
+/* .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #E7E7E7;
+    color: #555555;
+} */
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: red;
+    background-color: #000;
+}  
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: red;
+    background-color: #000;
+}
+
+/* .navbar-default .navbar-nav > .active {
+    color: #fff;
+   background: #000;
+ } */
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-image: -webkit-linear-gradient(top,#8185f9 0,#000 100%);
+    background-image: linear-gradient(to bottom,#8185f9 0,#000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8185f9', endColorstr='#ff000000', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    font-size: 17px;
+}
+
+ .dropdown-menu {
+    background-color: #000;
+}
+
+.dropdown-menu > li > a {
+    color: #fff;
+    font-size: 17px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 70px;
+}
+
+p.thick {
+    color: #fff;
+}
+
+.mobileHeader {
+    color: #fff;
+}
+
+.backgroundMaps {
+    background-image: url('../images/background/black3.jpg');
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundMaps2 {
+    background-image: url('../../images/background/field1.jpg');
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel {
+    padding-left:0;
+    padding-right:0;
+}
+
+.carousel-inner {
+    height: 540px;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+    padding-left:0;
+    padding-right:0;
+}
+
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+        .carousel-fade .carousel-inner > .item.next.left,
+        .carousel-fade .carousel-inner > .item.prev.right,
+        .carousel-fade .carousel-inner > .item.active {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+}
+
+@media only screen and (max-width:1024px) and (min-width:993px) {
+
+}
+
+@media only screen and (max-width:1024px) and (min-width:768px) {
+
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        float:none;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        padding-left: 10px;
+        color: #fff;
+    }
+
+    .mobileHeader {
+        text-align: center;
+    }
+
+    #myInput {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    #myUL {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 15px;
+        float:left;
+    }
+
+    #myUL li a {
+        font-size: 17px;
+        width: 250%;
+    }
+
+    .searchState {
+        width: 40%;
+        margin: 0 auto;
+        height: 89px;
+    }
+    .backgroundMaps {
+        background: url('../images/background/black3.jpg');
+        background-position: top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .backgroundMaps2 {
+        background: url('../images/background/black3.jpg');
+        background-position: top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+    .container-fluid, .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding-right: 5px;
+        padding-left: 5px;
+
+    }
+
+    .navbar-nav > li > a {
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .mobileHeader {
+        text-align: center;
+        color: #fff;
+    }
+
+    #myInput {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    #myUL {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 15px;
+        float:left;
+    }
+
+    #myUL li a {
+        font-size: 17px;
+        width: 250%;
+    }
+
+    .searchState {
+        width: 60%;
+        margin: 0 auto;
+        height: 89px;
+    }
+    
+    .mobilApp {
+        height: 40px;
+        width: 40px;
+    }
+
+    .dropdown-menu {
+        padding-left: 25px;
+        color:#fff;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: red;
+    }
+
+
+    .backgroundMaps {
+        background: url('../images/background/black3.jpg');
+        background-attachment: fixed;
+    }
+
+    .backgroundMaps2 {
+        background: url('../images/background/black3.jpg');
+        background-attachment: fixed;
+    }
+}
+
+/*@media only screen and (min-width: 320px) and
+(max-width: 479px) { 
+
+    #myInput {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    #myUL {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 15px;
+        float:left;
+    }
+
+    #myUL li a {
+        font-size: 17px;
+        width: 250%;
+    }
+
+    .searchState {
+        width: 60%;
+        margin: 0 auto;
+        height: 89px;
+    }
+} */
+
+ 
